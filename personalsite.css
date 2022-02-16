@@ -1,5 +1,35 @@
 body {
-  margin: 40px;
+  margin: 0px 40px;;
   background-color: #fef9f1;
-  font-family: 'Work Sans', Sans-Serif;
+  font-family: "Work Sans", Sans-Serif;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Playfair Display', Serif;
+  color: #a35429;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-name {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 60px;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 170px 55px 100px 55px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #a35429;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
