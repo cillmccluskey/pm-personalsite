@@ -5,7 +5,10 @@ body {
 }
 
 img {
+  max-width: 100%;
   width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .navbar {
@@ -48,16 +51,14 @@ nav ul {
 
 .main {
   background-color: #de9f7e;
-  border-radius: 5px;
   margin: 0 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: minmax(200px auto) 400px minmax(300px, auto);
 }
 
 main p {
   color: white;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .main-bio {
@@ -90,6 +91,37 @@ main p {
   padding: 20px 20px 20px 40px;
 }
 
-.portrait img {
-  border-radius: 5px;
+.certifications {
+  display: grid;
+  grid-gap: 45px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 50px;
+}
+
+h2 {
+  text-align: center;
+  padding: 50px 0 30px 0;
+  color: #a35429;
+  font-size: 2em;
+  font-family: 'Playfair Display', Serif;
+}
+
+.individual-cert {
+  border-radius: 2px;
+  box-shadow: 20px 10px 20px #de9f7e;
+  transition: transform 250ms;
+}
+
+.individual-cert:hover {
+  transform: translateY(-20px);
+}
+
+.individual-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.udemy-full {
+  text-align: center;
+  padding-top: 150px;
 }
