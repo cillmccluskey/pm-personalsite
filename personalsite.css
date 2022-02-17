@@ -21,9 +21,14 @@ body {
   font-size: 60px;
 }
 
+.nav-name a {
+  color: #a35429;
+  text-decoration: none;
+}
+
 .nav-item a {
   display: inline-block;
-  padding: 170px 55px 100px 55px;
+  padding: 170px 55px 70px 55px;
   text-decoration: none;
   font-size: 30px;
   color: #a35429;
