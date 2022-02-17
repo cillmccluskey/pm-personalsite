@@ -1,7 +1,11 @@
 body {
-  margin: 0px 40px;;
   background-color: #fef9f1;
   font-family: 'Source Sans Pro', Sans-Serif;
+  :;
+}
+
+.body-styling {
+  margin: 0px 40px;;
 }
 
 img {
@@ -119,9 +123,25 @@ h2 {
 .individual-content {
   display: flex;
   justify-content: space-evenly;
+  color: #a35429;
 }
 
 .udemy-full {
   text-align: center;
   padding-top: 150px;
+}
+
+footer {
+  border-radius: 2px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #a35429;
+  border-top: 1px solid #a35429;
+  border-bottom: 1px solid #a35429;
+  font-size: 18px;
+  padding: 20px;
 }
