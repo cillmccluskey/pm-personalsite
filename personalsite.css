@@ -12,7 +12,7 @@ img {
   max-width: 100%;
   width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .navbar {
@@ -131,19 +131,16 @@ h2 {
   padding-top: 150px;
 }
 
-.language-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1;
-  object-fit: scale-down;
-  margin: 50px 0;
+.language-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-.language-grid img {
-  width: 30%;
-  margin: auto;
+.language-flexbox img {
+  width: 7%;
 }
-
 
 .get-in-touch {
   text-align: center;
