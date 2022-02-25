@@ -136,6 +136,7 @@ h2 {
   background-color: #f7b267;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding: 5px;
 }
 
 .udemy-full {
@@ -277,22 +278,26 @@ footer {
 /* tablet */
 @media(min-width: 768px) and (max-width: 1200px) {
 
+  .navbar {
+    flex-direction: column;
+  }
+
   .nav-name {
     font-size: 38px;
   }
 
   .nav-links {
-    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .nav-item a {
     padding: 0;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .main {
     grid-template-rows: 1;
-    margin: 0 100px;
+    margin: 0 5px;
   }
 
   .main p {
