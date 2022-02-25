@@ -325,22 +325,21 @@ footer {
 /* mobile  */
 @media(min-width: 360px) and (max-width: 768px) {
 
-  .navbar {
-    flex-direction: column;
-  }
-
   .nav-name {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .nav-links {
-    justify-content: space-evenly;
-    padding: 0;
+    display: none;
   }
 
   .nav-item a {
     padding: 0;
     font-size: 20px;
+  }
+
+  .nav-name {
+    padding: 0;
   }
 
   .main {
