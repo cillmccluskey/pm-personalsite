@@ -329,7 +329,8 @@ footer {
   }
 
   .nav-links {
-    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
   }
 
   .nav-item a {
