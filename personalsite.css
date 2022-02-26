@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fef9f1;
-  font-family: 'Source Sans Pro', Sans-Serif;
-  
+  font-family: "Source Sans Pro", Sans-Serif;
 }
 
 a {
@@ -9,13 +12,13 @@ a {
 }
 
 .body-styling {
-  margin: 0px 40px;;
+  margin: 0px 40px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  font-family: 'Playfair Display', Serif;
+  font-family: "Playfair Display", Serif;
   color: #a35429;
 }
 
@@ -73,7 +76,7 @@ main p {
 }
 
 .main-quote p {
-  color:#a35429;
+  color: #a35429;
 }
 
 .about-me {
@@ -84,19 +87,19 @@ main p {
   border-radius: 30px;
   border: 2px solid #f7b267;
   background-color: #f7b267;
-  color: #ffe8d6;
+  color: #fef9f1;
   padding: 12px 30px 12px 30px;
   font-size: 18px;
 }
 
 .browse-button:hover {
-  color: #ffe8d6;
+  color: #fef9f1;
   box-shadow: 0.2em 0.5em 0.5em -0.2em #a35429;
   transform: translateY(-0.1em);
 }
 
 .browse-button a:visited {
-  color: #ffe8d6;
+  color: #fef9f1;
 }
 
 .certifications {
@@ -115,7 +118,7 @@ h2 {
   padding: 50px 0 30px 0;
   color: #a35429;
   font-size: 2em;
-  font-family: 'Playfair Display', Serif;
+  font-family: "Playfair Display", Serif;
 }
 
 .individual-cert {
@@ -157,31 +160,27 @@ h2 {
 
 .public-health-lens {
   display: flex;
-  margin: 100px 0;
+  align-items: center;
+  padding: 150px 0 30px 0;
 }
 
-/* .phl-overlay {
-  position: absolute;
-  top: 2420px;
-  left: 370px;
-  width: 25%;
-  transform: rotate(-90deg);
-  border-radius: 5px;
-} */
-
-.graphic {
+/* .graphic {
   background-color: #f7b267;
   width: 45%;
   height: 550px;
   border-top-right-radius: 200px;
+} */
+
+.graphic img {
+  width: 100%;
 }
 
 .phl-text {
-  margin: 150px 0 0 200px;
+  padding-left: 50px;
   text-align: center;
 }
 
-.poppy-flour {
+/* .poppy-flour {
   display: flex;
   flex-direction: row-reverse;
   margin: 100px 0;
@@ -197,10 +196,10 @@ h2 {
 .poppy-flour-text {
   margin: 150px 30px 0 300px;
   text-align: center;
-}
+} */
 
 .headline {
-  font-family: 'Playfair Display', Serif;
+  font-family: "Playfair Display", Serif;
   font-size: 32px;
   color: #c8553d;
 }
@@ -216,7 +215,7 @@ h3 {
 
 .get-in-touch {
   text-align: center;
-  background-color:#ffe8d6;
+  background-color: #ffe8d6;
 }
 
 .get-in-touch h2 {
@@ -224,21 +223,27 @@ h3 {
 }
 
 .get-in-touch button {
-  margin-bottom: 20px;
-  margin-top: -20px;
   border-radius: 30px;
-  border: 2px solid #ffe8d6;
-  background-color: #ffe8d6;
-  color: #a35429;
-  padding: 15px 30px 15px 30px;
+  border: 2px solid #f7b267;
+  background-color: #f7b267;
+  color: #fef9f1;
+  padding: 12px 30px 12px 30px;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .get-in-touch button:hover {
-  border-color: #ffe8d6;
-  color: #a35429;
-  box-shadow: 0em 0.5em 0.5em -0.3em #a35429;
-  transform: translateY(-0.25em);
+  color: #fef9f1;
+  box-shadow: 0.2em 0.5em 0.5em -0.2em #a35429;
+  transform: translateY(-0.1em);
+}
+
+.get-in-touch a:visited {
+  color: #fef9f1;
+}
+
+.git {
+  margin: 0;
 }
 
 footer {
@@ -261,7 +266,7 @@ footer {
 /* media queries */
 
 /* dekstop */
-@media(min-width: 1200px) and (max-width: 2000px) {
+@media (min-width: 1200px) and (max-width: 2000px) {
   .main {
     grid-template-rows: 1;
     margin: 0 100px;
@@ -271,13 +276,10 @@ footer {
     font-size: 18px;
     line-height: 1.5;
   }
-
-  
 }
 
 /* tablet */
-@media(min-width: 768px) and (max-width: 1200px) {
-
+@media (min-width: 768px) and (max-width: 1200px) {
   .navbar {
     flex-direction: column;
   }
@@ -308,23 +310,27 @@ footer {
 
   .browse-button {
     border-radius: 30px;
-    border: 2px solid #e09f3e;
-    background-color: #e09f3e;
     color: #ffe8d6;
     padding: 12px 25px 12px 25px;
     margin-bottom: 20px;
     font-size: 18px;
   }
-  
+
   .language-flexbox img {
     width: 10%;
   }
-  
+
+  .get-in-touch button {
+    border-radius: 30px;
+    color: #ffe8d6;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
 }
 
 /* mobile  */
-@media(min-width: 360px) and (max-width: 768px) {
-
+@media (min-width: 320px) and (max-width: 768px) {
   .nav-name {
     font-size: 20px;
   }
@@ -359,16 +365,53 @@ footer {
 
   .browse-button {
     border-radius: 30px;
-    border: 2px solid #e09f3e;
-    background-color: #e09f3e;
     color: #ffe8d6;
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
     font-size: 16px;
   }
-  
+
   .language-flexbox img {
-    width: 15%;
+    width: 20%;
   }
-  
+
+  .public-health-lens {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 0 0;
+  }
+
+  .phl-text {
+    padding: 0;
+  }
+
+  .certifications {
+    margin: auto;
+  }
+
+  .public-health-lens div:nth-child(1) {
+    order: 1;
+  }
+
+  .get-in-touch button {
+    border-radius: 30px;
+    color: #ffe8d6;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .headline {
+    font-family: "Playfair Display", Serif;
+    font-size: 20px;
+    color: #c8553d;
+  }
+
+  .subheadline {
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
 }
