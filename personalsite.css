@@ -15,6 +15,63 @@ a {
   margin: 0px 40px;
 }
 
+.popup {
+  background-color: #a35429;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  color: #ffe8d6;
+  text-align: center;
+  display: none;
+  position: fixed;
+  opacity: .9;
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color:#ffe8d6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 10px 0 0;
+  font-size: 2.5em;
+}
+
+.meat {
+  margin-top: 300px;
+}
+
+.popup p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+#modalBtn {
+  margin: auto;
+  text-align: center;
+  background-color:#b7b7a4;
+  color: #333d29;
+  padding: 12px 20px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#modalBtn:hover {
+  box-shadow: 0.2em 0.3em 0.5em -0.2em;
+  transform: translateY(-0.1em);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -280,6 +337,13 @@ footer {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1200px) {
+  .meat {
+    margin: 200px 20px 50px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: none;
+  }
+  
   .navbar {
     flex-direction: column;
   }
@@ -331,6 +395,13 @@ footer {
 
 /* mobile  */
 @media (min-width: 320px) and (max-width: 768px) {
+  .meat {
+    margin: 100px 20px 50px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: none;
+  }
+  
   .nav-name {
     font-size: 20px;
   }
