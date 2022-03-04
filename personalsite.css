@@ -11,10 +11,6 @@ a {
   text-decoration: none;
 }
 
-.body-styling {
-  margin: 0px 40px;
-}
-
 .popup {
   background-color: #a35429;
   max-width: 100%;
@@ -52,7 +48,6 @@ a {
 
 .popup p {
   text-align: center;
-  margin: 20px 0;
   font-size: 18px;
 }
 
@@ -81,12 +76,14 @@ a {
 
 .nav-links {
   display: flex;
+  align-items: flex-end;
 }
 
 .nav-name {
-  display: inline-block;
-  padding: 15px 15px;
-  font-size: 60px;
+  font-size: 40px;
+  align-items: flex-end;
+  padding: 30px 0 16px 0;
+  margin: 0 40px;
 }
 
 .nav-name a {
@@ -95,8 +92,7 @@ a {
 }
 
 .nav-item a {
-  display: inline-block;
-  padding: 170px 55px 70px 55px;
+  padding: 0 40px;
   text-decoration: none;
   font-size: 30px;
   color: #a35429;
@@ -112,7 +108,6 @@ nav ul {
 
 .main {
   background-color: #ffe8d6;
-  margin: 0 250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -137,7 +132,7 @@ main p {
 }
 
 .about-me {
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .browse-button {
@@ -361,6 +356,10 @@ footer {
     font-size: 24px;
   }
 
+  .about-me {
+    padding-bottom: 20px;
+  }
+
   .main {
     grid-template-rows: 1;
     margin: 0 5px;
@@ -416,7 +415,11 @@ footer {
   }
 
   .nav-name {
-    padding: 0;
+    margin: 0;
+  }
+
+  .about-me {
+    padding-bottom: 20px;
   }
 
   .main {
